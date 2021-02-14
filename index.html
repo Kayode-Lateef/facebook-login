@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+    <style>
+        /* This styling underneath could be used to achieve that horizontal rule enclosing the (or) */
+
+        /* p{
+        display: flex;
+        flex-direction: row;
+        width: 30%;
+        margin: auto;
+    }
+    p:before, p:after{
+     content: "";
+     flex: 1 1;  
+     border-bottom: 3px inset #000;
+     margin: auto; 
+    }
+    p:before{
+        margin-right: 10px;
+    }
+    p:after{
+        margin-left: 10px;
+    } */
+
+        /* This styling above could be used to achieve that horizontal rule enclosing the (or) */
+
+
+        body {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            font-family: Arial;
+        }
+
+        h1 {
+            font-family: Arial;
+            margin: 5px;
+            color: blue;
+        }
+
+        .container {
+            width: 400px;
+            border: 1px solid #ccc;
+            padding: 15px;
+        }
+
+        .input-wrapper {
+            margin: 15px;
+        }
+
+        .input-box {
+            margin: 5px 5px;
+            width: 100%;
+            height: 30px;
+            padding: 7px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            outline: none;
+        }
+
+        .btn-login {
+            display: block;
+            background-color: blue;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+            width: 390px;
+            padding: 10px;
+            color: white;
+            font-size: 18px;
+            margin-left: 20px;
+            margin-bottom: 0px;
+        }
+
+
+
+        hr {
+            width: 40%;
+            position: relative;
+        }
+
+        #line-1 {
+            float: left;
+            margin-left: 20px;
+        }
+
+        #line-2 {
+            float: right;
+            margin-right: 0px;
+        }
+
+        .btn-create-new {
+            margin-top: 15px;
+            background-color: green;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+            width: 50%;
+            padding: 10px;
+            color: white;
+            font-size: 18px;
+        }
+
+        a {
+            text-decoration: none;
+            color: blue;
+        }
+
+        form {
+            margin-bottom: 50px;
+        }
+
+        #lang {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+
+        ul {
+            margin: 10px;
+        }
+
+        li {
+            list-style: none;
+            margin-left: 0px;
+            padding: 2px;
+        }
+
+        li span {
+            font-size: 18px;
+            color: rgb(136, 116, 116);
+        }
+
+        small {
+            color: rgb(114, 92, 92);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Facebook</h1>
+        <form action="">
+            <div class="input-wrapper">
+                <input class="input-box" type="text" placeholder="Mobile number or email address"> <br>
+                <input class="input-box" type="password" placeholder="Password"> <br>
+            </div>
+            <button class="btn-login">Log In</button> <br>
+
+            <hr id="line-1"> <span>or</span>
+            <hr id="line-2"> <br>
+
+            <button class="btn-create-new">Create New Account</button>
+            <p><a href="">Forgotten password?</a></p>
+        </form>
+
+        <div id="lang">
+            <ul>
+                <li><a href=""> English (UK)</a></li>
+                <li><a href="">Portugues (Brasil)</a></li>
+                <li><a href="">Espanol</a></li>
+                <li><a href="">Deutsch</a></li>
+            </ul>
+            <ul>
+                <li><a href="">Hausa</a></li>
+                <li><a href="">Francais (France)</a></li>
+                <li><a href="">Arabic</a></li>
+                <li><button><a href=""> <span>+</span></a></button></li>
+            </ul>
+        </div>
+        <small>Facebook Inc</small>
+    </div>
+</body>
+
+</html>
